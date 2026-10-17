@@ -1,71 +1,33 @@
-# Merge the Tools! – HackerRank (Python)
+# HackerRank: Merge the Tools!
 
-## Problem Description
+## Problem Statement
 
-You are given a string `s` and an integer `k`. Divide the string into substrings of length `k`. For each substring, remove duplicate characters while maintaining the original order of the remaining characters.
+You are given a string `s` of length `n` and an integer `k`, where `k` is a factor of `n`.
+
+Split the string `s` into `n/k` substrings, each containing `k` consecutive characters.
+
+For each substring, create a new string by removing repeated occurrences of characters while preserving the original order of the remaining characters.
 
 Print each resulting string on a separate line.
 
-## Example
+### Input Format
+- The first line contains the string `s`.
+- The second line contains the integer `k`.
 
-**Input**
+### Constraints
+- \(1 \leq k \leq n\)
+- \(n\) is a multiple of \(k\).
+- The string contains uppercase English letters.
+
+### Sample Input
 ```text
 AABCAAADA
 3
 ```
 
-**Output**
+### Sample Output
 ```text
 AB
 CA
 AD
 ```
-
-## Explanation
-
-The string `AABCAAADA` is divided into three substrings of length 3:
-
-- `AAB` → `AB`
-- `CAA` → `CA`
-- `ADA` → `AD`
-
-Repeated characters are removed from each substring, while the order of distinct characters is preserved.
-
-## Python Solution
-
-```python
-def merge_the_tools(string, k):
-    for i in range(0, len(string), k):
-        substring = string[i:i+k]
-        result = ""
-
-        for char in substring:
-            if char not in result:
-                result += char
-
-        print(result)
-
-
-if __name__ == '__main__':
-    string, k = input(), int(input())
-    merge_the_tools(string, k)
-```
-
-## Concepts Practiced
-
-- Python strings
-- String slicing
-- `for` loops
-- Conditional statements
-- Removing duplicate characters
-- Preserving character order
-
-## Complexity Analysis
-
-- **Time Complexity:** `O(n × k)` for this implementation in the worst case, where `n` is the length of the input string and `k` is the group size.
-- **Auxiliary Space Complexity:** `O(k)` for the temporary substring and result.
-
-## Platform
-
-HackerRank – Python – Strings
-
