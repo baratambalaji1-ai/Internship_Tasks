@@ -1,108 +1,49 @@
+# Set .difference() Operation
 
-HackerRank Home
-|
-Prepare
-Certify
-Compete
-Search
+## Problem Statement
 
-|
-Switch to..
+Students of District College have subscriptions to English and French newspapers. Some students have subscribed only to the English newspaper, some have subscribed only to the French newspaper, and some have subscribed to both newspapers.
 
-baratambalaji1
-PreparePythonSetsSet .difference() Operation
-Set .difference() Operation
-35/115 challenges solved
-Rank: 187179|Points: 545
-Python
-Problem
-Submissions
-Leaderboard
-Discussions
-Editorial
-A-B.png .difference()
+You are given two sets of student roll numbers. One set contains the roll numbers of students who have subscribed to the English newspaper, and the other set contains the roll numbers of students who have subscribed to the French newspaper.
 
-The tool .difference() returns a set with all the elements from the set that are not in an iterable.
-Sometimes the - operator is used in place of the .difference() tool, but it only operates on the set of elements in set.
-Set is immutable to the .difference() operation (or the - operation).
+Your task is to find the total number of students who have subscribed to **only the English newspaper**.
 
->>> s = set("Hacker")
->>> print s.difference("Rank")
-set(['c', 'r', 'e', 'H'])
+## Input Format
 
->>> print s.difference(set(['R', 'a', 'n', 'k']))
-set(['c', 'r', 'e', 'H'])
+- The first line contains the number of students who have subscribed to the English newspaper.
+- The second line contains the space-separated roll numbers of those students.
+- The third line contains the number of students who have subscribed to the French newspaper.
+- The fourth line contains the space-separated roll numbers of those students.
 
->>> print s.difference(['R', 'a', 'n', 'k'])
-set(['c', 'r', 'e', 'H'])
+## Constraints
 
->>> print s.difference(enumerate(['R', 'a', 'n', 'k']))
-set(['a', 'c', 'r', 'e', 'H', 'k'])
+As specified in the HackerRank problem.
 
->>> print s.difference({"Rank":1})
-set(['a', 'c', 'e', 'H', 'k', 'r'])
-
->>> s - set("Rank")
-set(['H', 'c', 'r', 'e'])
-Task
-
-Students of District College have a subscription to English and French newspapers. Some students have subscribed to only the English newspaper, some have subscribed to only the French newspaper, and some have subscribed to both newspapers.
-
-You are given two sets of student roll numbers. One set has subscribed to the English newspaper, and one set has subscribed to the French newspaper. Your task is to find the total number of students who have subscribed to only English newspapers.
-
-Input Format
-
-The first line contains the number of students who have subscribed to the English newspaper.
-The second line contains the space separated list of student roll numbers who have subscribed to the English newspaper.
-The third line contains the number of students who have subscribed to the French newspaper.
-The fourth line contains the space separated list of student roll numbers who have subscribed to the French newspaper.
-
-Constraints
-
-
-Output Format
+## Output Format
 
 Output the total number of students who are subscribed to the English newspaper only.
 
-Sample Input
+## Sample Input
 
+```text
 9
 1 2 3 4 5 6 7 8 9
 9
 10 1 2 3 11 21 55 6 8
-Sample Output
+```
 
+## Sample Output
+
+```text
 4
-Explanation
+```
 
-The roll numbers of students who only have English newspaper subscriptions are:
- and .
-Hence, the total is  students.
+## Explanation
 
-Language
-Python 3
-More
-1
-# Enter your code here. Read input from STDIN. Print output to STDOUT
-Line: 1 Col: 70
+The roll numbers of students who have subscribed only to the English newspaper are `4, 5, 7, 9`.
 
-Test against custom input
-Author[deleted]
-DifficultyEasy
-Max Score10
-Submitted By222645
-Need Help?
-View discussions
-View editorial
-View top submissions
-rate this challenge
+Hence, the total number of students is `4`.
 
-MORE DETAILS
-Download problem statement
-Download sample test cases
-Suggest Edits
-Share on XShare on LinkedIn
-BlogScoringEnvironmentFAQAbout UsHelpdeskCareersTerms Of ServicePrivacy Policy
+**Language:** Python 3
 
-
-
+**Difficulty:** Easy
