@@ -1,100 +1,57 @@
+# Making Anagrams
 
-HackerRank Home
-|
-Prepare
-Certify
-Compete
-Search
+## Problem Statement
 
-1
-|
-Switch to..
+We consider two strings to be anagrams of each other if the first string's letters can be rearranged to form the second string. In other words, both strings must contain the same exact letters with the same frequency.
 
-baratambalaji1
-PrepareAlgorithmsStringsMaking Anagrams
-Making Anagrams
-30 more points to get your next star!
-Rank: 1325611|Points: 170/200
-Problem Solving
-Problem
-Submissions
-Leaderboard
-Discussions
-Editorial
-Topics
-We consider two strings to be anagrams of each other if the first string's letters can be rearranged to form the second string. In other words, both strings must contain the same exact letters in the same exact frequency. For example, bacdc and dcbac are anagrams, but bacdc and dcbad are not.
+For example, `bacdc` and `dcbac` are anagrams, but `bacdc` and `dcbad` are not.
 
-Alice is taking a cryptography class and finding anagrams to be very useful. She decides on an encryption scheme involving two large strings where encryption is dependent on the minimum number of character deletions required to make the two strings anagrams. Can you help her find this number?
+Alice is taking a cryptography class and finding anagrams to be very useful. She decides on an encryption scheme involving two large strings where encryption depends on the minimum number of character deletions required to make the two strings anagrams.
 
-Given two strings,  and , that may not be of the same length, determine the minimum number of character deletions required to make  and  anagrams. Any characters can be deleted from either of the strings.
+Given two strings, `s1` and `s2`, that may not be of the same length, determine the minimum number of character deletions required to make them anagrams. Any characters can be deleted from either string.
 
-Example.
+## Function Description
 
+Complete the `makingAnagrams` function.
 
-The only characters that match are the 's so we have to remove  from  and  from  for a total of  deletions.
+### Parameters
+- `s1`: A string.
+- `s2`: Another string.
 
-Function Description
+### Returns
+- `int`: The minimum number of deletions needed.
 
-Complete the makingAnagrams function in the editor below.
+## Input Format
 
-makingAnagrams has the following parameter(s):
+- The first line contains a single string, `s1`.
+- The second line contains a single string, `s2`.
 
-string s1: a string
-string s2: a string
-Returns
+## Constraints
 
-int: the minimum number of deletions needed
-Input Format
+- `s1` and `s2` consist of lowercase English letters, `ascii[a-z]`.
 
-The first line contains a single string, .
-The second line contains a single string, .
+## Output Format
 
-Constraints
+Print the minimum number of character deletions required to make the two strings anagrams.
 
-It is guaranteed that  and  consist of lowercase English letters, ascii[a-z].
-Sample Input
+## Sample Input
 
+```text
 cde
 abc
-Sample Output
+```
 
+## Sample Output
+
+```text
 4
-Explanation
+```
 
-Delete the following characters from our two strings to turn them into anagrams:
+## Explanation
 
-Remove d and e from cde to get c.
-Remove a and b from abc to get c.
- characters have to be deleted to make both strings anagrams.
+Delete the following characters from the two strings to make them anagrams:
 
-Language
-Python 3
-More
-12345678910111213141516171819
+- Remove `d` and `e` from `cde` to get `c`.
+- Remove `a` and `b` from `abc` to get `c`.
 
-    fptr.close()
-
-Line: 33 Col: 1
-
-Test against custom input
-Authoramititkgp
-DifficultyEasy
-Max Score30
-Submitted By103885
-Need Help?
-View discussions
-View editorial
-View top submissions
-RESOURCES
-String Basics
-rate this challenge
-
-MORE DETAILS
-Download problem statement
-Download sample test cases
-Suggest Edits
-Share on XShare on LinkedIn
-BlogScoringEnvironmentFAQAbout UsHelpdeskCareersTerms Of ServicePrivacy Policy
-
-
-
+A total of **4 characters** must be deleted to make both strings anagrams.
