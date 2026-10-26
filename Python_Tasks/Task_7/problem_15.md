@@ -1,120 +1,90 @@
+# Game of Thrones - I
 
-HackerRank Home
-|
-Prepare
-Certify
-Compete
-Search
+## Problem Statement
 
-1
-|
-Switch to..
+The Dothraki are planning an attack to usurp King Robert's throne. King Robert learns of this conspiracy from a raven and plans to lock the single door through which the enemy can enter his kingdom.
 
-baratambalaji1
-PrepareAlgorithmsStringsGame of Thrones - I
-Game of Thrones - I
-215 more points to get your next star!
-Rank: 927899|Points: 260/475
-Problem Solving
-Problem
-Submissions
-Leaderboard
-Discussions
-Editorial
-Topics
-Dothraki are planning an attack to usurp King Robert's throne. King Robert learns of this conspiracy from Raven and plans to lock the single door through which the enemy can enter his kingdom.
+To lock the door, he needs a key that is an anagram of a palindrome. He starts going through his box of strings, checking whether they can be rearranged into a palindrome.
 
-door
+Given a string `s`, determine whether its characters can be rearranged to form a palindrome. Return `YES` or `NO`.
 
-But, to lock the door he needs a key that is an anagram of a palindrome. He starts to go through his box of strings, checking to see if they can be rearranged into a palindrome. Given a string, determine if it can be rearranged into a palindrome. Return the string YES or NO.
+## Function Description
 
-Example
+Complete the `gameOfThrones` function.
 
-One way this can be arranged into a palindrome is . Return YES.
+### Parameter
+- `s`: A string to analyze.
 
-Function Description
-Complete the gameOfThrones function below.
+### Returns
+- `string`: Either `YES` or `NO`.
 
-gameOfThrones has the following parameter(s):
+## Input Format
 
-string s: a string to analyze
-Returns
+A single line containing the string `s`.
 
-string: either YES or NO
-Input Format
+## Constraints
 
-A single line which contains .
+- `1 ≤ |s| ≤ 10⁵`
+- `s` contains only lowercase English letters (`a-z`).
 
-Constraints
+## Output Format
 
- |s| 
- contains only lowercase letters in the range 
-Sample Input 0
+Print `YES` if the string can be rearranged into a palindrome. Otherwise, print `NO`.
 
+## Sample Input 0
+
+```text
 aaabbbb
-Sample Output 0
+```
 
+## Sample Output 0
+
+```text
 YES
-Explanation 0
+```
 
-A palindromic permutation of the given string is bbaaabb.
+## Explanation 0
 
-Sample Input 1
+One possible palindromic arrangement of the given string is:
 
+```text
+bbaaabb
+```
+
+## Sample Input 1
+
+```text
 cdefghmnopqrstuvw
-Sample Output 1
+```
 
+## Sample Output 1
+
+```text
 NO
-Explanation 1
+```
 
-Palindromes longer than 1 character are made up of pairs of characters. There are none here.
+## Explanation 1
 
-Sample Input 2
+Palindromes longer than one character are made up of pairs of characters, with at most one character appearing an odd number of times.
 
+In this string, multiple characters appear an odd number of times, so it cannot be rearranged into a palindrome.
+
+## Sample Input 2
+
+```text
 cdcdcdcdeeeef
-Sample Output 2
+```
 
+## Sample Output 2
+
+```text
 YES
-Explanation 2
+```
 
-An example palindrome from the string: ddcceefeeccdd.
+## Explanation 2
 
-Language
-Python 3
-More
-12345678910111213141516171819
+One possible palindrome that can be formed from the string is:
 
-    s = input()
-
-    result = gameOfThrones(s)
-
-    fptr.write(result + '\n')
-
-    fptr.close()
-
-Line: 29 Col: 1
-
-Test against custom input
-Authoramititkgp
-DifficultyEasy
-Max Score30
-Submitted By123545
-Need Help?
-View discussions
-View editorial
-View top submissions
-RESOURCES
-Palindrome
-Dictionary
-Anagram
-rate this challenge
-
-MORE DETAILS
-Download problem statement
-Download sample test cases
-Suggest Edits
-Share on XShare on LinkedIn
-BlogScoringEnvironmentFAQAbout UsHelpdeskCareersTerms Of ServicePrivacy Policy
-
-
-
+```text
+ddcceefeeccdd
+```
